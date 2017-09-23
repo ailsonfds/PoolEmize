@@ -13,8 +13,8 @@ Essa aplicação tem como intuíto facilitar o gerenciamento de pesquisas com en
 ## Requisitos
 
 Regras gerais deste sistema:
-	- O sistema possui eleitores e juizes de eleição.
-	- As eleições só devem ser cadastradas por juízes de eleição.
-	- Só quem pode votar são os eleitores e juízes de eleição.
-	- Juízes de eleição não podem modificar votos, apenas validá-los.
-	- Todo voto é secreto e direto, ou seja, juízes não podem ver quem votou mas devem saber o resultado da votação.
+- O sistema possui eleitores e juizes de eleição.
+- As eleições só devem ser cadastradas por juízes de eleição.
+- Só quem pode votar são os eleitores e juízes de eleição.
+- Juízes de eleição não podem modificar votos, apenas validá-los.
+- Todo voto é secreto e direto, ou seja, juízes não podem ver quem votou mas devem saber o resultado da votação.
