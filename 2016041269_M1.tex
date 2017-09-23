@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ae}
+\usepackage{pslatex}
+\usepackage[portuges]{babel}
+\usepackage{indentfirst}
+\usepackage[portuguese,noprefix]{nomencl}
+\usepackage{setspace}
+\usepackage[colorlinks,allcolors=black]{hyperref}
+\usepackage{enumitem}
+\usepackage[ampersand]{easylist}
+\usepackage{fancyhdr}
+
+\setlength{\oddsidemargin}{2.5cm}
+\setlength{\evensidemargin}{2.5cm}
+\setlength{\textwidth}{15cm}
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\setlength{\topmargin}{2.0cm}
+\setlength{\headheight}{1.0cm}
+\setlength{\headsep}{1.0cm}
+\setlength{\textheight}{22.7cm}
+\setlength{\footskip}{1.0cm}
+\addtolength{\topmargin}{-1in}
+\singlespacing
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\centering
+\linespread{2.0}
+\Huge\Huge\textbf{M1} \\
+\huge\huge\textbf{Projeto de modelagem} \\
+\LARGE\LARGE\textbf{Sistema de gerenciamento de votos} \\
+\vfill
+\end{center}
+\textbf{Discente: } Ailson Forte dos Santos \\
+\textbf{Disciplina: } DIM0504 - Análise de Projeto Orientado a Objetos (APOO) \\
+{\par\hfill\today}
+\end{titlepage}
+\newpage
+\tableofcontents
+
+\newpage
+\section*{Descrição da aplicação}
+\markright{}
+\addcontentsline{toc}{section}{Descrição da aplicação}
+Desenvolveremos nesse projeto um sitema que visa gerenciar enquetes e elições. Seja para propósitos simples como a cor favorita de determinado grupo de indivíduos ou algo mais complexo como a eleição para presidente de um país.
+\par
+Essa aplicação tem como intuíto facilitar o gerenciamento de pesquisas com enfoques estatísticos. Nela, o usuário poderá criar e manipular sua própria pesquisa ou eleição.
+
+\newpage
+\section*{Requisitos}
+\markright{}
+\addcontentsline{toc}{section}{Requisitos}
+\subsection*{Regras gerais deste sistema:}
+\markright{}
+\addcontentsline{toc}{subsection}{Regras gerais deste sistema}
+
+\begin{easylist}[itemize]
+& O sistema possui eleitores e juizes de eleição.
+& As eleições só devem ser cadastradas por juízes de eleição.
+& Só quem pode votar são os eleitores e juízes de eleição.
+& Juízes de eleição não podem modificar votos, apenas validá-los.
+& Todo voto é secreto e direto, ou seja, juízes não podem ver quem votou mas devem saber o resultado da votação.
+\end{easylist}
+
+\end{document}
+
+http://www.ebc.com.br/noticias/politica/2013/07/como-funciona-o-sistema-eleitoral-brasileiro
+https://pt.wikipedia.org/wiki/Sistema_de_vota%C3%A7%C3%A3o
