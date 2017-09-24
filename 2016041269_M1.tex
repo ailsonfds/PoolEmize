@@ -10,6 +10,7 @@
 \usepackage{enumitem}
 \usepackage[ampersand]{easylist}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
 
 \setlength{\oddsidemargin}{2.5cm}
 \setlength{\evensidemargin}{2.5cm}
@@ -59,11 +60,30 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 
 \begin{easylist}[itemize]
 & O sistema possui eleitores e juizes de eleição.
-& As eleições só devem ser cadastradas por juízes de eleição.
-& Só quem pode votar são os eleitores e juízes de eleição.
+& As enquetes/eleições só devem ser cadastradas por juízes de eleição.
+& Qualquer usuário não cadastrado é eleitor. Eleitores e juízes de eleição podem votar livremente de acordo com as regras estabelecidas pelo juiz criador da enquete/eleição.
 & Juízes de eleição não podem modificar votos, apenas validá-los.
-& Todo voto é secreto e direto, ou seja, juízes não podem ver quem votou mas devem saber o resultado da votação.
+& Todo voto é secreto e direto, ou seja, apenas juízes podem ver quem votou e divulgar o resultado da votação de suas próprias enquetes/eleições.
 \end{easylist}
+
+\newpage
+\section*{Casos de uso}
+\markright{}
+\addcontentsline{toc}{section}{Casos de uso}
+\subsection*{Diagrama de casos de uso}
+\markright{}
+\addcontentsline{toc}{subsection}{Diagrama de casos de uso}
+\includegraphics[width=15cm]{use_cases/UseCaseDiagram0.png}
+\par
+\subsection*{Descrição dos casos de uso}
+\markright{}
+\addcontentsline{toc}{subsection}{Descrição dos casos de uso}
+\begin{tabular}{|c|}\hline
+	{\textbf{Criar conta}} \\
+	{\textbf{Ator principal:}} Usuário \\
+	{\textbf{Atores secundários:}} Sistema\\
+	\hline
+\end{tabular}
 
 \newpage
 \section*{Referências}
