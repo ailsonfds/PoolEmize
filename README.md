@@ -1,4 +1,4 @@
-# PoolEmize
+# PoollEmize
 
 ## Descrição da aplicação
 
