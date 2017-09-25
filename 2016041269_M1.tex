@@ -85,14 +85,15 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \markright{}
 \addcontentsline{toc}{subsubsection}{Criar Conta (CSU01)}
 \begin{tabular}{|l|}\hline
-	{\textbf{Sumario:}} Usuário usa o sistema para criar uma conta de juiz eleitoral. \\
+	{\textbf{Sumario:}} Usuário usa o sistema para criar uma conta de juiz eleitoral. \\\\
 	{\textbf{Ator primário:}} Usuário \\
-	{\textbf{Atores Secundários:}} Servidor\\
+	{\textbf{Atores Secundários:}} Servidor\\\\
 	{\textbf{Fluxo Principal}}\\
 	1. O usuário solicita a realização do cadastro.\\
 	2. O usuário é redirecionado para a tela de cadastro. \\
 	3. O usuário preenche suas informações, confirma o cadastro e aguarda verificação de email.\\
-	4. Após a verificação do cadastro, os dados são enviados ao servidor e o usuário é direcionado\\ a tela principal de enquetes/eleições.\\
+	4. Após a verificação do cadastro, os dados são enviados ao servidor e o usuário é direcionado\\ a tela principal de enquetes/eleições.\\\\
+	{\textbf{Pós-condições:}} O usuário se torna juiz.\\
 	\hline
 \end{tabular}
 
@@ -102,26 +103,152 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \markright{}
 \addcontentsline{toc}{subsubsection}{Gerenciar Perfil(CSU02)}
 \begin{tabular}{|l|}\hline
-	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar suas informações pessoais na conta de juiz\\ eleitoral. \\
-	{\textbf{Ator primário:}} Usuário \\
-	{\textbf{Atores Secundários:}} Sistema
+	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar suas informações pessoais na conta de juiz\\ eleitoral. \\\\
+	{\textbf{Ator primário:}} Usuário \\\\
+	{\textbf{Precondições:}} O usuário é juiz.\\\\
 	{\textbf{Fluxo Principal}}\\
 	1. O usuário solicita ao sistema a visualização dos dados cadastrados.\\
 	2. O usuário é redirecionado para a tela de configurações. \\
 	3. O usuário visualiza suas informações. \\
-	4. Após a verificação dados, eles são enviados ao servidor e o usuário é direcionado a tela\\ principal de enquetes/eleições.\\
+	4. Após a verificação dos dados, eles são enviados ao servidor e o usuário é direcionado a tela\\ principal de enquetes/eleições.\\\\
 	{\textbf{Fluxo Alternativo(03):}}\\
+	a. O usuário atualiza as informações da enquete.\\\\
+	{\textbf{Pós-condições:}} O cadastro está atulaizado ou o usuário apenas verificou suas informações.\\
+	\hline
+\end{tabular}
+\\\\
+\begin{center}
+	{\subsubsection*{Criar Enquete/Eleição(CSU03)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Criar Enquete/Eleição(CSU03)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar informações de suas enquetes/eleições.\ \ \ \ \ \ \ \ \ \ \\\\
+	{\textbf{Ator primário:}} Usuário \\
+	{\textbf{Atores Secundários:}} Servidor\\\\
+	{\textbf{Precondições:}} O usuário é juiz.\\\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização das enquetes/eleições.\\
+	2. O usuário é redirecionado para a tela de enquetes/eleições. \\
+	3. O usuário aperta o botão de criar nova enquete/eleição. \\
+	4. O usuário entra com as informações da nova enquete/eleição.\\
+	5. O usuário confirma as informações.\\
+	6. O usuário altera as consigurações de visualização da enquete/eleição.\\
+	7. O usuário salva a enquete/eleição no servidor.\\
+	8. O usuário é redirecionado a tela de visualização das enquetes/eleições.\\\\
+	{\textbf{Pós-condições:}} As enquetes/eleições do usuário são atualizadas.\\
+	\hline
+\end{tabular}
+
+\begin{center}
+	{\subsubsection*{Gerenciar Enquete/Eleição(CSU04)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Gerenciar Enquete/Eleição(CSU04)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar informações de suas enquetes/eleições.\ \ \ \ \ \ \ \ \ \\\\
+	{\textbf{Ator primário:}} Usuário \\
+	{\textbf{Atores Secundários:}} Servidor\\\\
+	{\textbf{Precondições:}} O usuário é juiz. O usuário criou, ao menos uma, enquete/eleição.\\\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização das enquetes/eleições.\\
+	2. O usuário é redirecionado para a tela de enquetes/eleições. \\
+	3. O usuário seleciona a enquete/eleição que deseja gerenciar. \\
+	4. O usuário entra com as novas informações da enquete/eleição.\\
+	5. O usuário confirma as informações.\\
+	6. O usuário salva a enquete/eleição no servidor.\\
+	7. O usuário é redirecionado a tela de visualização das enquetes/eleições.\\\\
+	{\textbf{Fluxo Alternativo(04):}}\\
+	a. O usuário altera as consigurações de visualização da enquete/eleição.\\\\
+	{\textbf{Pós-condições:}} As enquetes/eleições do usuário são atualizadas.\\
+	\hline
+\end{tabular}
+\\\\
+\begin{center}
+	{\subsubsection*{Visualizar Dados de Enquete/Eleição(CSU05)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Visualizar Dados de Enquete/Eleição(CSU05)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para visualizar informações de suas enquetes/eleições.\ \ \ \ \ \ \ \ \ \\\\
+	{\textbf{Ator primário:}} Usuário \\\\
+	{\textbf{Precondições:}} O usuário é juiz. O usuário criou, ao menos uma, enquete/eleição.\\\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização das enquetes/eleições.\\
+	2. O usuário é redirecionado para a tela de enquetes/eleições. \\
+	3. O usuário seleciona a enquete/eleição que deseja visualizar. \\
+	4. O usuário solicita ser redirecionado a tela de visualização das enquetes/eleições.\\
+	\hline
+\end{tabular}
+
+\begin{center}
+	{\subsubsection*{Visualizar Enquetes/Eleições de Outros Usuários(CSU06)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Visualizar Enquetes/Eleições de Outros Usuários(CSU06)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para visualizar informações de enquetes/eleições de outros \hfill \\ usuários. \\\\
+	{\textbf{Ator primário:}} Usuário \\\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização das enquetes/eleições.\\
+	2. O usuário é redirecionado para a tela de enquetes/eleições. \\
+	3. O usuário seleciona a enquete/eleição que deseja visualizar. \\
+	4. O usuário solicita ser redirecionado a tela de visualização das enquetes/eleições.\\
+	\hline
+\end{tabular}
+\\\\
+\begin{center}
+	{\subsubsection*{Votar(CSU07)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Votar(CSU07)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para votar em enquetes/eleições de outros usuários.\ \ \ \ \ \ \ \ \ \ \ \ \ \\\\
+	{\textbf{Ator primário:}} Usuário \\
+	{\textbf{Atores secundários:}} Servidor\\
+	{\textbf{Precondições:}} CSU06.\\\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização da enquete/eleição que deseja votar.\\
+	2. O usuário seleciona a opção de voto desejada.\\
+	3. O usuário seleciona o botão de votar.\\
+	4. O sistema salva o voto para a validação do juiz.\\
+	5. O usuário recebe a confirmação do voto.\\
+	6. O usuário é redirecionado a tela de visualização das enquetes/eleições.\\\\
+	{\textbf{Pós-condições:}} O servidor atualiza os dados da enquete/eleição.\\
+	\hline
+\end{tabular}
+
+\begin{center}
+	{\subsubsection*{Visualizar Pontuações de Usuários(CSU08)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Visualizar Pontuações de Usuários(CSU08)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para visualizar pontuações de usuários.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\\\
+	{\textbf{Ator primário:}} Usuário \\\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização de pontuação.\\
+	2. O usuário é redirecionado para a tela de visualização de pontuação. \\
+	3. O usuário seleciona o ranking que deseja visualizar. \\
+	4. O usuário solicita ser redirecionado a tela inicial.\\
 	\hline
 \end{tabular}
 
 \newpage
-\section*{Referências}
+\begin{thebibliography}{9}
+	\bibitem{lamport94}
+	BEZERRA, E.
+	\textit{Princípios de Análise e Projeto de Sistemas com UML.}
+	 3. ed. rev. atual.
+	 Elsevier/Campus,
+	 2015.
+	 416 p.\\
+	\par\url{https://www.aedb.br/seget/arquivos/artigos13/28518220.pdf}\\
+	\par\url{https://en.wikipedia.org/wiki/Census}\\
+	\par\url{https://en.wikipedia.org/wiki/Demography}\\
+\end{thebibliography}
 \markright{}
 \addcontentsline{toc}{section}{Referências}
-\par\url{https://www.aedb.br/seget/arquivos/artigos13/28518220.pdf}
-\par\url{https://en.wikipedia.org/wiki/Census}
-\par\url{https://en.wikipedia.org/wiki/Demography}
-
 
 
 \end{document}
