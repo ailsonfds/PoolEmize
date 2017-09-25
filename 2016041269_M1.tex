@@ -74,7 +74,7 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \markright{}
 \addcontentsline{toc}{subsection}{Diagrama de casos de uso}
 \includegraphics[width=15cm]{use_cases/UseCaseDiagram0.png}
-\par
+\newpage
 \subsection*{Descrição dos casos de uso}
 \markright{}
 \addcontentsline{toc}{subsection}{Descrição dos casos de uso}
@@ -84,9 +84,33 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Criar Conta (CSU01)}
-\begin{tabular}{|c|}\hline
-	{\textbf{Ator principal:}} Usuário \\
-	{\textbf{Atores secundários:}} Sistema\\
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para criar uma conta de juiz eleitoral. \\
+	{\textbf{Ator primário:}} Usuário \\
+	{\textbf{Atores Secundários:}} Servidor\\
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita a realização do cadastro.\\
+	2. O usuário é redirecionado para a tela de cadastro. \\
+	3. O usuário preenche suas informações, confirma o cadastro e aguarda verificação de email.\\
+	4. Após a verificação do cadastro, os dados são enviados ao servidor e o usuário é direcionado\\ a tela principal de enquetes/eleições.\\
+	\hline
+\end{tabular}
+
+\begin{center}
+	{\subsubsection*{Gerenciar Perfil(CSU02)}}
+\end{center}
+\markright{}
+\addcontentsline{toc}{subsubsection}{Gerenciar Perfil(CSU02)}
+\begin{tabular}{|l|}\hline
+	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar suas informações pessoais na conta de juiz\\ eleitoral. \\
+	{\textbf{Ator primário:}} Usuário \\
+	{\textbf{Atores Secundários:}} Sistema
+	{\textbf{Fluxo Principal}}\\
+	1. O usuário solicita ao sistema a visualização dos dados cadastrados.\\
+	2. O usuário é redirecionado para a tela de configurações. \\
+	3. O usuário visualiza suas informações. \\
+	4. Após a verificação dados, eles são enviados ao servidor e o usuário é direcionado a tela\\ principal de enquetes/eleições.\\
+	{\textbf{Fluxo Alternativo(03):}}\\
 	\hline
 \end{tabular}
 
