@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{ae}
 \usepackage{pslatex}
@@ -30,7 +30,7 @@
 \begin{center}
 \centering
 \linespread{2.0}
-\Huge\Huge\textbf{M1} \\
+\Huge\Huge\textbf{MX} \\
 \huge\huge\textbf{Projeto de modelagem} \\
 \LARGE\LARGE\textbf{Sistema de gerenciamento de votos} \\
 \vfill
@@ -42,7 +42,9 @@
 \newpage
 \tableofcontents
 
-\newpage
+\chapter*{M1}
+\markright{}
+\addcontentsline{toc}{chapter}{M1}
 \section*{Descrição da aplicação}
 \markright{}
 \addcontentsline{toc}{section}{Descrição da aplicação}
@@ -54,7 +56,6 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \par Uma solução viável para os tempos atuais é a criação de um sistema de informações. Ele possibilita que uma máquina(desktop, smartphone, notepad, etc) faça um processo, que para um humano é repetitivo e cansativo, de forma ágil, prática e sem se "cansar". Isso facilitaria bastante a vida do Geraldo, pois, se sua coleta de dados resultasse na aceitação do público, ele já estaria implementando sua empresa no bairro.
 \par E é visando essa melhoria no processo de coleta de dados que desenvolveremos nesse projeto um sitema que visa gerenciar enquetes e/ou eleições. Nosso intuito é, através dos dados coletados, fornecer informações aos interessados sobre a opinião da população. Seja para propósitos simples como a cor favorita de determinado grupo de indivíduos ou algo mais complexo como a eleição para presidente de um país. Nela, o usuário poderá criar e gerenciar sua própria pesquisa ou eleição.
 
-\newpage
 \section*{Requisitos}
 \markright{}
 \addcontentsline{toc}{section}{Requisitos}
@@ -77,23 +78,23 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \subsection*{Home Screen}
 \markright{}
 \addcontentsline{toc}{subsection}{Home Screen}
-\includegraphics[width=15cm]{mockups/HomeScreen.png}
+\includegraphics[width=14.3cm]{mockups/HomeScreen.png}
 \subsection*{Tela de Criação de Enquetes}
 \markright{}
 \addcontentsline{toc}{subsection}{Tela de Criação de Enquetes}
-\includegraphics[width=15cm]{mockups/CreatePoollsTab.png}
+\includegraphics[width=14.3cm]{mockups/CreatePoollsTab.png}
 \subsection*{Tela de Visualização de Enquetes para Usuários Não-cadastrados}
 \markright{}
 \addcontentsline{toc}{subsection}{Tela de Visualização de Enquetes para Usuários Não-cadastrados}
-\includegraphics[width=15cm]{mockups/GeneralPoollsScreenTab.png}
+\includegraphics[width=14.3cm]{mockups/GeneralPoollsScreenTab.png}
 \subsection*{Tela de Ranking}
 \markright{}
 \addcontentsline{toc}{subsection}{Tela de Ranking}
-\includegraphics[width=15cm]{mockups/GeneralScoreScreenTab.png}
+\includegraphics[width=14.3cm]{mockups/GeneralScoreScreenTab.png}
 \subsection*{Tela de Visualização de Enquetes para Usuários Cadastrados}
 \markright{}
 \addcontentsline{toc}{subsection}{Tela de Visualização de Enquetes para Usuários Cadastrados}
-\includegraphics[width=15cm]{mockups/PoollsTab.png}
+\includegraphics[width=14.3cm]{mockups/PoollsTab.png}
 
 \newpage
 \section*{Casos de uso}
@@ -102,7 +103,7 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \subsection*{Diagrama de casos de uso}
 \markright{}
 \addcontentsline{toc}{subsection}{Diagrama de casos de uso}
-\includegraphics[width=15cm]{use_cases/UseCaseDiagram0.png}
+\includegraphics[width=14.3cm]{use_cases/UseCaseDiagram.png}
 \newpage
 \subsection*{Descrição dos casos de uso}
 \markright{}
@@ -263,7 +264,49 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \section*{Diagrama de Classes de Domínio}
 \markright{}
 \addcontentsline{toc}{section}{Diagrama de Classes de Domínio}
-\includegraphics[width=15cm]{class_diagrams/ClassDiagram0.png}
+\includegraphics[width=14.3cm]{class_diagrams/DomainClassDiagram.png}
+
+\chapter*{M2}
+\markright{}
+\addcontentsline{toc}{chapter}{M2}
+\section*{Diagrama de Classes após análise BCE}
+\markright{}
+\addcontentsline{toc}{section}{Diagrama de Classes após análise BCE}
+\includegraphics[width=14.3cm]{class_diagrams/BCEClassDiagram.png}
+
+\section*{VCPs}
+\markright{}
+\addcontentsline{toc}{section}{VCPs}
+
+\subsection*{Criar Conta}
+\markright{}
+\addcontentsline{toc}{subsection}{Criar conta}
+\includegraphics[width=14.3cm]{class_diagrams/VCPCriarConta.png}
+
+\subsection*{Criar enquete/eleição}
+\markright{}
+\addcontentsline{toc}{subsection}{Criar enquete/eleição}
+\includegraphics[width=14.3cm]{class_diagrams/VCPCriarEnquete-Eleicao.png}
+
+\subsection*{Gerenciar enquete/eleição}
+\markright{}
+\addcontentsline{toc}{subsection}{Gerenciar enquete/eleição}
+\includegraphics[width=14.3cm]{class_diagrams/VCPGerenciarEnquete-Eleicao.png}
+
+\subsection*{Gerenciar Perfil}
+\markright{}
+\addcontentsline{toc}{subsection}{Gerenciar Perfil}
+\includegraphics[width=14.3cm]{class_diagrams/VCPGerenciarPerfil.png}
+
+\subsection*{Visualizar dados de enquete/eleição}
+\markright{}
+\addcontentsline{toc}{subsection}{Visualizar dados de enquete/eleição}
+\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarEnquete.png}
+
+\subsection*{Visualizar pontuações de usuários}
+\markright{}
+\addcontentsline{toc}{subsection}{Visualizar pontuações de usuários}
+\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarPontuacao.png}
 
 \newpage
 \begin{thebibliography}{9}
