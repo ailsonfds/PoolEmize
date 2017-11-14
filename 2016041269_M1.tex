@@ -11,6 +11,7 @@
 \usepackage[ampersand]{easylist}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{tabularx}
 
 \setlength{\oddsidemargin}{2.5cm}
 \setlength{\evensidemargin}{2.5cm}
@@ -35,8 +36,11 @@
 \LARGE\LARGE\textbf{Sistema de gerenciamento de votos} \\
 \vfill
 \end{center}
-\textbf{Discente: } Ailson Forte dos Santos \\
-\textbf{Disciplina: } DIM0504 - Análise de Projeto Orientado a Objetos (APOO) \\
+\par
+\textbf{Discente: } Ailson Forte dos Santos
+\par
+\textbf{Disciplina: } DIM0504 - Análise de Projeto Orientado a Objetos (APOO)
+\par
 {\par\hfill\today}
 \end{titlepage}
 \newpage
@@ -114,24 +118,24 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Criar Conta (CSU01)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para criar uma conta de juiz eleitoral. \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
-	{\textbf{Fluxo Principal}}\\
-	1. O usuário solicita a realização do cadastro.\\
+	{\textbf{Fluxo Principal}} \\
+	1. O usuário solicita a realização do cadastro. \\
 	2. O usuário é redirecionado para a tela de cadastro. \\
-	3. O usuário preenche suas informações, confirma o cadastro e aguarda verificação de email.\\
-	4. Após a verificação do cadastro, os dados são enviados ao servidor e o usuário é direcionado\\ a tela principal de enquetes/eleições.\\\\
-	{\textbf{Pós-condições:}} O usuário se torna juiz.\\
+	3. O usuário preenche suas informações, confirma o cadastro e aguarda verificação de email. \\
+	4. Após a verificação do cadastro, os dados são enviados ao servidor e o usuário é direcionado a tela principal de enquetes/eleições. \\\\
+	{\textbf{Pós-condições:}} O usuário se torna juiz. \\
 	\hline
-\end{tabular}
+\end{tabularx}
 
 \begin{center}
 	{\subsubsection*{Gerenciar Perfil(CSU02)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Gerenciar Perfil(CSU02)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar suas informações pessoais na conta de juiz\\ eleitoral. \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Precondições:}} O usuário é juiz.\\\\
@@ -144,14 +148,14 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	a. O usuário atualiza as informações da enquete.\\\\
 	{\textbf{Pós-condições:}} O cadastro está atulaizado ou o usuário apenas verificou suas informações.\\
 	\hline
-\end{tabular}
-\\\\
+\end{tabularx}
+\newpage
 \begin{center}
 	{\subsubsection*{Criar Enquete/Eleição(CSU03)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Criar Enquete/Eleição(CSU03)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar informações de suas enquetes/eleições.\ \ \ \ \ \ \ \ \ \ \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Precondições:}} O usuário é juiz.\\\\
@@ -166,14 +170,14 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	8. O usuário é redirecionado a tela de visualização das enquetes/eleições.\\\\
 	{\textbf{Pós-condições:}} As enquetes/eleições do usuário são atualizadas.\\
 	\hline
-\end{tabular}
+\end{tabularx}
 
 \begin{center}
 	{\subsubsection*{Gerenciar Enquete/Eleição(CSU04)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Gerenciar Enquete/Eleição(CSU04)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para gerenciar informações de suas enquetes/eleições.\ \ \ \ \ \ \ \ \ \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Precondições:}} O usuário é juiz. O usuário criou, ao menos uma, enquete/eleição.\\\\
@@ -187,16 +191,16 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	7. O usuário é redirecionado a tela de visualização das enquetes/eleições.\\\\
 	{\textbf{Fluxo Alternativo(04):}}\\
 	a. O usuário altera as consigurações de visualização da enquete/eleição.\\\\
-	{\textbf{Pós-condições:}} As enquetes/eleições do usuário são atualizadas.\\
+	{\textbf{Pós-condições:}} As enquetes/eleições do usuário são atualizadas. \\
 	\hline
-\end{tabular}
-\\\\
+\end{tabularx}
+
 \begin{center}
 	{\subsubsection*{Visualizar Dados de Enquete/Eleição(CSU05)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Visualizar Dados de Enquete/Eleição(CSU05)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para visualizar informações de suas enquetes/eleições.\ \ \ \ \ \ \ \ \ \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Precondições:}} O usuário é juiz. O usuário criou, ao menos uma, enquete/eleição.\\\\
@@ -206,14 +210,14 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	3. O usuário seleciona a enquete/eleição que deseja visualizar. \\
 	4. O usuário solicita ser redirecionado a tela de visualização das enquetes/eleições.\\
 	\hline
-\end{tabular}
+\end{tabularx}
 
 \begin{center}
 	{\subsubsection*{Visualizar Enquetes/Eleições de Outros Usuários(CSU06)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Visualizar Enquetes/Eleições de Outros Usuários(CSU06)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para visualizar informações de enquetes/eleições de outros \hfill \\ usuários. \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Fluxo Principal}}\\
@@ -222,14 +226,14 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	3. O usuário seleciona a enquete/eleição que deseja visualizar. \\
 	4. O usuário solicita ser redirecionado a tela de visualização das enquetes/eleições.\\
 	\hline
-\end{tabular}
-\\\\
+\end{tabularx}
+
 \begin{center}
 	{\subsubsection*{Votar(CSU07)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Votar(CSU07)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para votar em enquetes/eleições de outros usuários.\ \ \ \ \ \ \ \ \ \ \ \ \ \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Precondições:}} CSU06.\\\\
@@ -242,14 +246,14 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	6. O usuário é redirecionado a tela de visualização das enquetes/eleições.\\\\
 	{\textbf{Pós-condições:}} O servidor atualiza os dados da enquete/eleição.\\
 	\hline
-\end{tabular}
+\end{tabularx}
 
 \begin{center}
 	{\subsubsection*{Visualizar Pontuações de Usuários(CSU08)}}
 \end{center}
 \markright{}
 \addcontentsline{toc}{subsubsection}{Visualizar Pontuações de Usuários(CSU08)}
-\begin{tabular}{|l|}\hline
+\begin{tabularx}{\textwidth}{|X|}\hline
 	{\textbf{Sumario:}} Usuário usa o sistema para visualizar pontuações de usuários.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\\\
 	{\textbf{Ator primário:}} Usuário \\\\
 	{\textbf{Fluxo Principal}}\\
@@ -258,7 +262,7 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 	3. O usuário seleciona o ranking que deseja visualizar. \\
 	4. O usuário solicita ser redirecionado a tela inicial.\\
 	\hline
-\end{tabular}
+\end{tabularx}
 
 \newpage
 \section*{Diagrama de Classes de Domínio}
@@ -286,12 +290,12 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \subsection*{Criar enquete/eleição}
 \markright{}
 \addcontentsline{toc}{subsection}{Criar enquete/eleição}
-\includegraphics[width=14.3cm]{class_diagrams/VCPCriarEnquete-Eleicao.png}
+\includegraphics[width=14.3cm]{class_diagrams/VCPCriarEnquete.png}
 
 \subsection*{Gerenciar enquete/eleição}
 \markright{}
 \addcontentsline{toc}{subsection}{Gerenciar enquete/eleição}
-\includegraphics[width=14.3cm]{class_diagrams/VCPGerenciarEnquete-Eleicao.png}
+\includegraphics[width=14.3cm]{class_diagrams/VCPGerenciarEnquete.png}
 
 \subsection*{Gerenciar Perfil}
 \markright{}
@@ -301,12 +305,23 @@ Desde os tempos mais antigos a humanidade busca conhecer os padrões existentes 
 \subsection*{Visualizar dados de enquete/eleição}
 \markright{}
 \addcontentsline{toc}{subsection}{Visualizar dados de enquete/eleição}
-\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarEnquete.png}
+\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarDadosEnquete.png}
+
+\subsection*{Visualizar enquetes/eleições de outros usuários}
+\markright{}
+\addcontentsline{toc}{subsection}{Visualizar pontuações de usuários}
+\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarEnquetes.png}
 
 \subsection*{Visualizar pontuações de usuários}
 \markright{}
 \addcontentsline{toc}{subsection}{Visualizar pontuações de usuários}
-\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarPontuacao.png}
+\includegraphics[width=14.3cm]{class_diagrams/VCPVisualizarEnquetes.png}
+
+\subsection*{Votar}
+\markright{}
+\addcontentsline{toc}{subsection}{Visualizar pontuações de usuários}
+\includegraphics[width=14.3cm]{class_diagrams/VCPVotar.png}
+
 
 \newpage
 \begin{thebibliography}{9}
